@@ -20,6 +20,7 @@ setup(
     include_package_data=True,
     setup_requires=['pytest-runner'],
     tests_require=[
+        'flake8',
         'pytest',
         'flask',
         'sanic',
