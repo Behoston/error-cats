@@ -8,7 +8,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='Error Cats',
-    version='0.0.1',
+    version='0.1.0',
     url='https://github.com/Behoston/error-cats',
     license='MIT',
     author='Behoston',
@@ -18,6 +18,13 @@ setup(
     long_description_content_type='text/markdown',
     py_modules=['error_cats'],
     include_package_data=True,
+    test_suite='pytest',
+    tests_require=[
+        'pytest',
+        'flask',
+        'sanic',
+        'aiohttp',
+    ],
     platforms='any',
     classifiers=[
         'Environment :: Web Environment',

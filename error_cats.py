@@ -22,16 +22,16 @@ TEMPLATE = """
 
 
 class ErrorCats(metaclass=abc.ABCMeta):
-    def __init__(self, app=None, animal='cat', status_codes=DEFAULT_ERROR_CODES, simply_html_template=TEMPLATE):
+    def __init__(self, app=None, animal='cat', status_codes=DEFAULT_ERROR_CODES, simple_html_template=TEMPLATE):
         """
         :param app: Web application
         :param animal: List of all available animal can be found in `error_cats.AVAILABLE_ERROR_ANIMALS`
         :param status_codes: all status codes that should be returned as cats
-        :param simply_html_template: HTML template as format string. Available values: `image` (url) and `status_code`
+        :param simple_html_template: HTML template as format string. Available values: `image` (url) and `status_code`
         """
         self.animal = animal
         self.status_codes = status_codes
-        self.template = simply_html_template
+        self.template = simple_html_template
         if app is not None:
             self.init_app(app)
 
