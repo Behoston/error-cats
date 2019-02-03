@@ -2,3 +2,5 @@
 build/
 dist/
 Error_Cats.egg-info/
+.eggs/
+.pytest_cache/
