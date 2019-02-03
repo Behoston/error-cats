@@ -9,7 +9,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 setup(
     name='Error Cats',
     version='0.0.1',
-    url='https://github.com/Salted-Waffers/error-cats',
+    url='https://github.com/Behoston/error-cats',
     license='MIT',
     author='Behoston',
     author_email='mlegiecki@gmail.com',
