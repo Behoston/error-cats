@@ -2,7 +2,7 @@ import abc
 
 AVAILABLE_ERROR_ANIMALS = {
     'cat': 'https://http.cat/{}',
-    'dog': 'https://httpstatusdogs.com/img/{}.jpg',
+    'dog': 'https://http.dog/{}.jpg',
 }
 
 DEFAULT_ERROR_CODES = set(range(400, 600))
