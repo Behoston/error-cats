@@ -5,7 +5,7 @@ Extension that allows you to return error cats instead of regular error pages.
 Extension uses:
 
 - https://http.cat/
-- https://httpstatusdogs.com/
+- https://http.dog/
 
 
 
@@ -59,5 +59,5 @@ if __name__ == '__main__':
 |---|---|---|
 | `app` | `None` (can be configured later) | Web application (Flask or Sanic) |
 | `animal` | `cat` | Available values: `cat`, `dog` |
-| `status_codes` | `400...599` | Container with status codes that should be translated into cats |
+| `status_codes` | `400...599` | Container with status codes that should be translated into cats or dogs |
 | `simple_html_template` | `...` | Simple python format string (html). Should contain `{status_cde}` (int) and `{image}` (url) |
