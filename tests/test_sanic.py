@@ -8,9 +8,8 @@ def test_sanic_cat():
 
 
 def test_sanic_cat_only_for_given_status_codes():
-    client = app_factory(cat_settings={
-        'status_codes': {500},
-    }).test_client
+    app = app_factory(cat_settings={'status_codes': {500}, })
+    client = app.test_client
 
     _, response = client.get('/500')
     assert b'https://http.cat/500' in response.body

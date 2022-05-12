@@ -5,7 +5,7 @@ from error_cats import SanicErrorCats
 
 
 def app_factory(cat_settings):
-    app = Sanic()
+    app = Sanic(name='test_error_cats')
     SanicErrorCats(app, **cat_settings)
 
     @app.route('/<status_code:int>')
